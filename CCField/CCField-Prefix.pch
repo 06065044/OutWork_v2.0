@@ -1,0 +1,192 @@
+//
+//  Prefix header
+//
+//  The contents of this file are implicitly included at the beginning of every source file.
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_3_0
+#warning "This project uses features only available in iOS SDK 3.0 and later."
+#endif
+#define ISSTIMEINTERVAL @"ISSTIMEINTERVAL"
+
+/*
+ * 背景色值方法
+ */
+#define RGBA(R/*红*/, G/*绿*/, B/*蓝*/, A/*透明*/) \
+[UIColor colorWithRed:R/255.f green:G/255.f blue:B/255.f alpha:A]
+
+#define IPHONE_HEIGHT @"iphone_height"
+
+/*
+ * 判断系统版本
+ */
+#define CCIOS7 ([[[UIDevice currentDevice] systemVersion]floatValue] >= 7.0)
+
+/*
+ *获取全屏的高度
+ */
+#define kFullScreenSizeWidth         [UIScreen mainScreen].bounds.size.width
+#define kFullScreenSizeHeght         [UIScreen mainScreen].bounds.size.height
+
+/*
+ * 数据库
+ */
+#define defaults [NSUserDefaults standardUserDefaults]
+//账号密码
+#define USER_NAME @"username"
+#define PASS_WORD @"password"
+//第一次地图定位
+#define kFirstLoction           @"firstLocationService"
+
+//高德地图APIKey  //1 国税通 a460e4f3ed3ba79cf130f66f6a8a4da5 2.二级架构 63b48a115accad2095a547bfa7d4fbf4
+#define AMAP_KEY                @"a460e4f3ed3ba79cf130f66f6a8a4da5"
+//百度地图apikey
+#define BaiDu_KEY               @"zigEVaZ0YswpxgCW3ltKVNVk5bkfRWkm"
+
+
+//友盟的key
+#define UMeng_Key               @"5810236407fe6553ea002711"
+/*******************************************************************************************/
+
+//测试环境登陆地址
+//#define loginUrl                @"http://117.78.42.226:8081/outside/dispatcher/issUser/code"
+//正式环境登陆地址
+#define loginUrl                @"http://117.78.42.226:8081/outside/dispatcher/issUser/clientLogin"
+
+#define accountUrl              @"http://117.78.42.226:8081/outside/dispatcher/issUser/findByMemberIdForPhone"
+ 
+#define passUrl                 @"http://117.78.42.226:8081/outside/dispatcher/issUser/updatePassWord"
+
+#define noticeUrl               @"http://117.78.42.226:8081/outside/dispatcher/announcement/queryByRule"
+
+#define pathUrl                 @"http://117.78.42.226:8081/outside/dispatcher/announcement/downLoad"
+
+#define messageUrl              @"http://117.78.42.226:8081/outside/dispatcher/issMsg/getMsgListById"
+
+#define locationUrl             @"http://117.78.42.226:8081/outside/dispatcher/location/saveCurrPostion"
+
+#define locationArcord          @"http://117.78.42.226:8081/outside/dispatcher/location/getCurrDateLocationList"
+//考勤频率接口
+#define signSetting             @"http://117.78.42.226:8081/outside/dispatcher/sign/getSignRuleByUserInfo"
+
+/**
+ * 工作计划接口
+ */
+//完成计划
+#define completePlan            @"http://117.78.42.226:8081/outside/dispatcher/workplan/completePlan"
+//删除计划
+#define deletePlanUrl           @"http://117.78.42.226:8081/outside/dispatcher/workplan/deleteWorkPlan"
+//查询计划
+#define queryPlanUrl            @"http://117.78.42.226:8081/outside/dispatcher/workplan/getPlanGroupByTask"
+//更新计划
+#define updatePlanUrl           @"http://117.78.42.226:8081/outside/dispatcher/workplan/updateWorkPlan"
+//添加计划
+#define addPlanUrl              @"http://117.78.42.226:8081/outside/dispatcher/workplan/saveWorkPlan"
+//计划详情
+#define planDetailUrl           @"http://117.78.42.226:8081/outside/dispatcher/workplan/queryById"
+//计划批示
+#define planReply               @"http://117.78.42.226:8081/outside/dispatcher/workPlanApprove/getDetail"
+
+/**
+ *  外勤工作
+ */
+//外勤工作查询
+#define workRecordURL           @"http://117.78.42.226:8081/outside/dispatcher/workRecord/queryWorkRecord"
+//外勤工作搜索
+#define workRecordSearchUrl     @"http://117.78.42.226:8081/outside/dispatcher/workRecord/queryWorkRecord"
+//外勤工作添加
+#define workRecordAddUrl        @"http://117.78.42.226:8081/outside/dispatcher/workRecord/saveOrUpdateWorkList"
+
+/**
+ *  签到签退
+ */
+//考勤信息获取
+#define signInfoURL             @"http://117.78.42.226:8081/outside/dispatcher/signmgr/querySignInfoByUser/v2"
+//签到签退
+#define signInOrOutUrl          @"http://117.78.42.226:8081/outside/dispatcher/signmgr/sign/v2"
+//签到规则获取
+#define KQ_Rule_Url             @"http://117.78.42.226:8081/outside/dispatcher/signmgr/getSignRule"
+//异常签到
+#define KQ_EXNORMAL_SIGN        @"http://117.78.42.226:8081/outside/dispatcher/signmgr/signExceptionReport"
+//签到说明修改
+#define signExplainUpdate       @"http://117.78.42.226:8081/outside/dispatcher/signmgr/signExpUpdate"
+//补签删除
+#define singDeleteUrl           @"http://117.78.42.226:8081/outside/dispatcher/signmgr/signAdditionDelete"
+/**
+ *  行车里程
+ */
+//获取行车列表
+#define getCarDisList           @"http://117.78.42.226:8081/outside/dispatcher/carDistance/getCarDistanceList"
+//开始行车轨迹
+#define startCarDistTrack       @"http://117.78.42.226:8081/outside/dispatcher/carDistance/startCarDistanceTrack"
+//结束行车轨迹
+#define endCarDisTrack          @"http://117.78.42.226:8081/outside/dispatcher/carDistance/endCarDistanceTrack"
+
+/**
+ *  提醒时间修改
+ */
+#define TimeRemind              @"http://117.78.42.226:8081/outside/dispatcher/signmgr/updateSignRemid"
+/**
+ *  提醒时间获取
+ */
+#define getRemindTime           @"http://117.78.42.226:8081/outside/dispatcher/signmgr/getSignRemid"
+
+/**
+ *  我的任务
+ */
+#define myTaskList              @"http://117.78.42.226:8081/outside/dispatcher/issTask/taskListById"
+//获取已发布的任务,用于添加计划，还有新增行车里程时的任务选取
+#define myTaskPublished         @"http://117.78.42.226:8081/outside/dispatcher/issTask/getPersonalTask"
+
+/**
+ *  通知公告
+ *
+ *  @param version
+ *
+ *  @return
+ */
+#define upNoticeState           @"http://117.78.42.226:8081/outside/dispatcher/announcement/updateMessageReadFlag"
+//注销接口
+#define LogOutURL               @"http://117.78.42.226:8081/outside/dispatcher/issUser/loginOut"
+//版本更新接口
+#define CheckVersionUrl         @"http://117.78.42.226:8081/outside/dispatcher/sysAppVersion/getLatestVersionByOS?appOS=IOS"
+//获取下属员工信息结构
+#define getSubPeople            @"http://117.78.42.226:8081/outside/dispatcher/issUser/getUserByJurisdictionForMobile"
+//获取员工的位置
+#define getSubPeopleLocation    @"http://117.78.42.226:8081/outside/dispatcher/location/getCurrPostionByUsersForMobile"
+//保持在线接口
+//#define  saveFiveURL        @"http://117.78.42.226:8081/outside/dispatcher/location/saveFivePostion"
+/*******************************************************************************************/
+
+#define NLSystemVersionGreaterOrEqualThan(version) ([[[UIDevice currentDevice] systemVersion] floatValue] >= version)
+#define IOS8_OR_LATER NLSystemVersionGreaterOrEqualThan(8.0)
+
+#define START_TINE              @"starttime"
+
+#define END_TIME                @"endtime"
+#define UPLOAD_DAYS             @"uploaddays"
+
+
+#define TASK_REFRESH            @"task_refresh"
+#define PLAN_REFRESH            @"plan_refresh"
+
+#define PEOPLE_ALL_ARRAY        @"people_all_array"
+#define IMAGE_ALL_ARRAY         @"image_all_select_array"
+/*******************************************************************************************/
+
+
+
+
+/*******************************************************************************************/
+
+#define iPhone5 ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(640, 1136), [[UIScreen mainScreen] currentMode].size) : NO)
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import "CCRootViewController.h"
+#import "CCAppDelegate.h"
+#import "NSObject+CC0utString.h"
+
+#endif

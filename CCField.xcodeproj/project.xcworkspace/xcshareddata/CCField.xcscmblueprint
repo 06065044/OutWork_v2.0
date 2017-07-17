@@ -1,0 +1,25 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "3c1a1906-419c-4f56-a2f9-42c9b485a233++8826",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "3c1a1906-419c-4f56-a2f9-42c9b485a233++8826" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "3c1a1906-419c-4f56-a2f9-42c9b485a233++8826" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "143EAE9D-30E4-4704-9243-B3444C8FA07D",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "3c1a1906-419c-4f56-a2f9-42c9b485a233++8826" : "%E5%8F%AF%E4%BB%A5%E7%94%A8%E7%9A%84%E5%A4%96%E5%8B%A4%E9%80%9A\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "CCField",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "外勤通莆田bug\/CCField.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/123.139.56.219:18080\/svn\/BDCloud",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "3c1a1906-419c-4f56-a2f9-42c9b485a233++8826"
+    }
+  ]
+}
